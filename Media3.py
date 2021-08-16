@@ -8,13 +8,12 @@
 # Saída
 # Todas as respostas devem ser apresentadas com uma casa decimal. As mensagens devem ser impressas conforme a descrição do problema. Não esqueça de imprimir o enter após o final de cada linha, caso contrário obterá "Presentation Error".
 
-n1, n2, n3, n4= input().split()
-n1 = float(n1)
-n2 = float(n2)
-n3 = float(n3)
-n4 = float(n4)
+notas=[]
 
-media = (n1+n2+n3+n4) / 4
+for i in input().split():
+    notas.append(float(i))
+
+media = sum(notas) / len(notas)
 print('Media: %.1f' %media)
 
 if (media>=7):
