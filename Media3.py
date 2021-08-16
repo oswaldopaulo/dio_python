@@ -8,24 +8,25 @@
 # Saída
 # Todas as respostas devem ser apresentadas com uma casa decimal. As mensagens devem ser impressas conforme a descrição do problema. Não esqueça de imprimir o enter após o final de cada linha, caso contrário obterá "Presentation Error".
 
-notas=[]
+n1, n2, n3, n4= input().split()
+n1 = float(n1)*2
+n2 = float(n2)*3
+n3 = float(n3)*4
+n4 = float(n4)
 
-for i in input().split():
-    notas.append(float(i))
-
-media = sum(notas) / len(notas)
+media = float((n1+n2+n3+n4) / 10)
 print('Media: %.1f' %media)
 
-if (media>=7):
+if (media>=7.0):
     print('Aluno aprovado.')
-elif(media<5):
+elif(media<5.0):
     print('Aluno reprovado.')
 else:
     print('Aluno em exame.')
     n5 = float(input())
     final = (n5+media)/2
     print('Nota do exame:', n5)
-    if final >= 5:
+    if final >= 5.0:
         print('Aluno aprovado.')
         print('Media final: %.1f' %final)
     else:
