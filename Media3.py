@@ -9,12 +9,14 @@
 # Todas as respostas devem ser apresentadas com uma casa decimal. As mensagens devem ser impressas conforme a descrição do problema. Não esqueça de imprimir o enter após o final de cada linha, caso contrário obterá "Presentation Error".
 
 n1, n2, n3, n4= input().split()
-n1 = float(n1)*2
-n2 = float(n2)*3
-n3 = float(n3)*4
+n1 = float(n1)
+n2 = float(n2)
+n3 = float(n3)
 n4 = float(n4)
 
-media = float((n1+n2+n3+n4) / 10)
+media = (n1*2+n2*3+n3*4+n4) / 10
+
+print(media)
 print('Media: %.1f' %media)
 
 if (media>=7.0):
